@@ -1,0 +1,417 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-block-size: 668px;
+  height: 100vh;
+  position: relative;
+}
+
+.header__theme-menu{
+    padding-top: 40px;
+    align-self: center;
+  }
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: end;
+  }
+
+.header__theme-menu-button {
+  font-family: var(--font-family);
+  font-weight: var(--litle-font-weight);
+  color: var(--accent-color);
+  font-size: var(--basic-font-size);
+  background: transparent;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #FF007066;
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+
+
+.header__rec {
+  font-size: var(--basic-font-size);
+  color: var(--accent-color, #FF0070);
+  display: flex;
+  align-items: center;
+  top: 20px;
+  right: 8px;
+  position: absolute;
+  gap: 10px;
+}
+
+.header__rec::after {
+  content: ' ';
+  background-color: var(--accent-color, #FF0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
+  border-radius: 100%;
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  
+}
+
+.decorated-zone:before {
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+  right: 0px;
+  top: 20px;
+}
+
+.decorated-zone:after{
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  border-left: 1px solid var(--accent-color, #FF0070);
+  left: 0px;
+  bottom: 20px;
+}
+
+
+.header__no-focus {
+color: var(--title-color);
+font-weight: var(--font-weight);
+font-size: var(--title-font-size);
+text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+
+.header__title {
+  color: var(--h-color);
+  font-weight: var(--font-weight);
+  font-size: var(--basic-font-size);
+  line-height: var(--line-height);
+  background-color: var(--accent-color);
+  word-break: normal;
+  white-space: normal;
+  max-width: 355px;
+  max-height: 117px;
+  justify-self: center;
+  align-items: center;
+  line-height: var(--line-height);
+}
+
+
+.section__title {
+  color: var(--accent-color);
+  font-size: var(--basic-font-size);
+  line-height: var(--line-height);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.card__title {
+  color: var(--h-color);
+  font-size: var(--basic-font-size);
+  line-height: var(--line-height);
+  background-color: var(--accent-color);
+}
+
+.card__title-alternate {
+  color: var(--h-color);
+  font-size: var(--basic-font-size);
+  line-height: var(--line-height);
+  background-color: var(--accent-color);
+  font-weight: var(--litle-font-weight);
+}
+
+.card__text {
+  color: var(--text-color);
+  font-size: var(--basic-font-size);
+  font-weight: var(--litle-font-weight);
+  line-height: var(--line-height);
+}
+
+.main__content {
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.section__title-why {
+  padding-top: 40px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+}
+
+.card {
+  gap: 20px;
+}
+
+.card__text {
+  padding-bottom: 20px;
+}
+
+.card__link {
+  text-shadow: 2px 2px 0px var(--accent-color);
+  text-decoration: none;
+}
+
+.card__link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.card__link:focus {
+  outline: 1px solid currentColor;
+}
+
+.content-section {
+  display: grid;
+}
+
+.card__title-advice {
+  margin-bottom: 20px;
+}
+
+.card__title-alternate {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 40px;
+  color: var(--title-color);
+  padding: 10px 0px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.footer__text {
+  position: relative;
+  text-shadow: 2px 2px 0px var(--accent-color);
+  line-height: 83%;
+  font-size: clamp(7.25rem, 7.0121rem + 1.0724vw, 7.5rem);
+  align-items: center;
+  justify-items: center;
+  font-weight: var(--font-weight);
+}
+
+
+
+@media (width >= 768px) {
+
+  .header__theme-menu {
+    padding-top: 40px;
+    align-self: center;
+  }
+
+  body {
+    padding: 0 20px;
+  }
+
+  .header__no-focus {
+    font-size: var(--title-font-desktop);
+  }
+
+  
+  .header__title{
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+    max-width: 364px;
+    margin-bottom: 50px;
+  }
+
+  .section__title {
+    padding: 0;
+  }
+
+  .content-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content-section__why {
+    padding-top: 60px;
+    grid-auto-flow: dense;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .article-list {
+    display: grid;
+    justify-self: start;
+    gap: 20px;
+    grid-column: span 2;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card__text {
+    padding: 0;
+    line-height: var(--line-height);
+    letter-spacing: 0%;
+  }
+
+  .section__title-why {
+    padding-top: 0px;
+    font-weight: var(--font-weight);
+    padding-bottom: 0px;
+  }
+
+  .section__title-concentration {
+    grid-column: span 3;
+    padding-bottom: 20px;
+    width: 236px;
+  }
+
+  .article-list__alternate {
+   grid-column: span 3;
+   grid-auto-flow: row; 
+  }
+
+  .content-section__concentration {
+    padding-bottom: 80px;
+  }
+
+  .card__title-advice {
+    margin: 0px;
+  }
+
+  .content-section__advice {
+    gap: 20px;
+    padding-bottom: 80px;
+  }
+
+  .article-list__advice {
+    padding-left: 8px;
+  }
+
+  .card__title-gallery {
+    grid-column: span 3;
+  }
+
+  .gallery__desktop {
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .gallery-section {
+    grid-template-columns: repeat(3, 1fr);
+    object-fit: cover;
+  }
+
+  .gallery__image-sunset {
+    grid-column: span 2;
+  }
+
+  .gallery__image-ice {
+    grid-column: 3 / 4;
+    grid-row: span 2;
+  }
+
+  .gallery__image-tape {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .gallery__image-street {
+    grid-column: span 2;
+  }
+
+}
+
+@media (width >= 1024px) {
+
+  .header__title{
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+    max-width: 491px;
+    margin-bottom: 60px;
+  }
+
+  .section__title-concentration {
+    grid-column: span 3;
+    padding-bottom: 20px;
+    width: 315px;
+  }
+
+  .article-list__alternate {
+   grid-template-columns: repeat(3, 1fr);
+  }
+
+   .content-section__concentration {
+    padding-bottom: 80px;
+  }
+
+  .header__theme-menu{
+    padding-top: 20px;
+    align-self: flex-start;
+  }
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: center;
+  }
+
+  .card__title-gallery {
+    margin-bottom: 20px;
+  }
+
+  .article-list__advice {
+    padding-right: 0px;
+  }
+  
+}

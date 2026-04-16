@@ -1,0 +1,87 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  --bg-image: url('../images/cover-image-light.png');  
+  --bg-color: #fff1ff;
+  --accent-color: #ff8dcb; 
+  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --h-color: var(--text-color);
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+}
+
+.header__theme-menu-button {
+  font-family: var(--font-family);
+  font-weight: var(--litle-font-weight);
+  color: var(--text-color);
+  font-size: var(--basic-font-size);
+  background: transparent;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #32312D66
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--text-color);
+}
+
+.theme-light .section__title {
+  color: var(--text-color);
+  font-size: var(--basic-font-size);
+  line-height: var(--line-height);
+}
+
+.theme-light .header__rec {
+  display: none;
+}
+
+/* .theme-light .header.decorated-zone::after {
+  display: none;
+}
+
+.theme-light .header.decorated-zone::before {
+  display: none;
+} */
+
+.theme-light .footer.decorated-zone::before {
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+  right: 0px;
+  top: 7px;
+}
+
+.theme-light .footer.decorated-zone::after {
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
+  left: 1px;
+  bottom: 10px;
+}
+
+
