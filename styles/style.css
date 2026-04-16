@@ -156,6 +156,7 @@ text-shadow: 4px 4px 0 var(--accent-color);
   font-size: var(--basic-font-size);
   font-weight: var(--litle-font-weight);
   line-height: var(--line-height);
+  padding-bottom: 20px;
 }
 
 .main__content {
@@ -168,10 +169,6 @@ text-shadow: 4px 4px 0 var(--accent-color);
 
 .card {
   gap: 20px;
-}
-
-.card__text {
-  padding-bottom: 20px;
 }
 
 .card__link {
@@ -193,10 +190,6 @@ text-shadow: 4px 4px 0 var(--accent-color);
 
 .card__title-advice {
   margin-bottom: 20px;
-}
-
-.card__title-alternate {
-  margin-bottom: 10px;
 }
 
 .gallery {
@@ -257,7 +250,7 @@ text-shadow: 4px 4px 0 var(--accent-color);
   }
 
   
-  .header__title{
+  .header__title {
     grid-row: 3;
     justify-self: end;
     align-self: center;
@@ -310,8 +303,8 @@ text-shadow: 4px 4px 0 var(--accent-color);
   }
 
   .article-list__alternate {
-   grid-column: span 3;
-   grid-auto-flow: row; 
+    grid-column: span 3;
+    grid-auto-flow: row; 
   }
 
   .content-section__concentration {
