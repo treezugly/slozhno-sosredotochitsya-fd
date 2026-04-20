@@ -1,7 +1,7 @@
 :root.theme-light {
-  --bg-image: url('../images/cover-image-light.png');  
+  --bg-image: url('../images/cover-image-light.png');
   --bg-color: #fff1ff;
-  --accent-color: #ff8dcb; 
+  --accent-color: #ff8dcb;
   --title-color: #FFC2E6;
   --text-color: #353430;
   --h-color: var(--text-color);
@@ -109,15 +109,5 @@
 }
 } 
 
-@media (width >= 1024px) {
-  .theme-light .footer.decorated-zone::before {
-  content: ' ';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-  right: 5px;
-  top: 20px;
-}
-}
+
+
