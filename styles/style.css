@@ -157,7 +157,7 @@ padding-left: 10px;
   line-height: var(--line-height);
   background-color: var(--accent-color);
   font-weight: var(--litle-font-weight);
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .card__text {
@@ -202,7 +202,7 @@ padding-left: 10px;
 }
 
 .card__title-gallery {
-  margin-top: 33px;
+  margin-top: 30px;
 }
 
 .gallery {
@@ -404,6 +404,10 @@ padding-left: 10px;
     padding: 0px;
   }
 
+  main {
+    padding: 0px;
+  }
+
   .header__title {
     grid-row: 3;
     align-self: center;
@@ -412,21 +416,17 @@ padding-left: 10px;
     margin-right: 5px;
   }
 
-  .section__title-concentration {
-    grid-column: span 3;
-    padding-bottom: 20px;
-    width: 315px;
+  .header__rec {
+    right: 15px;
   }
 
-  .article-list__alternate {
-   grid-template-columns: repeat(3, 1fr);
-  }
-
-   .content-section__concentration {
-    padding-bottom: 80px;
+  .decorated-zone::before {
+    top: 20px;
+    right: 5px;
   }
 
   .header__theme-menu {
+    padding-left: 30px;
     padding-top: 20px;
     align-self: flex-start;
   }
@@ -438,14 +438,56 @@ padding-left: 10px;
     justify-self: center;
   }
 
-  .card__title-gallery {
-    margin-bottom: 20px;
+  .content-section__why {
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 20px;
   }
+
+  .article-list__why {
+    grid-column: 2 / 3;
+  }
+
+  .content-section__concentration {
+    padding-left: 20px;
+    padding-bottom: 80px;
+  }
+
+  .section__title-concentration {
+    grid-column: span 3;
+    padding-bottom: 20px;
+    width: 315px;
+  }
+
+  .article-list__alternate {
+   grid-template-columns: repeat(3, 1fr);
+   margin-right: 5px;
+  }
+
+  .content-section__advice {
+    padding-bottom: 50px;
+  }
+
+  .section__title-advice {
+    padding-left: 20px;
+  }
+
 
   .article-list__advice {
-    padding-right: 0px;
+    margin: 0 5px;
   }
 
- 
+  .gallery-section {
+    padding-left: 20px;
+    margin-right: 5px;
+  }
   
+  .footer {
+    font-size: var(--title-font-desktop);
+  }
+
+  .footer__text {
+    font-size: 157px;
+    padding-left: 10px;
+  }
 }
