@@ -228,7 +228,7 @@ padding-left: 10px;
   width: 100%;
   margin-top: 40px;
   color: var(--title-color);
-  padding: 10px 0px;
+  padding: 0px;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -413,7 +413,7 @@ padding-left: 10px;
     align-self: center;
     max-width: 491px;
     margin-bottom: 20px;
-    margin-right: 5px;
+    margin-right: 20px;
   }
 
   .header__rec {
@@ -426,7 +426,7 @@ padding-left: 10px;
   }
 
   .header__theme-menu {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 20px;
     align-self: flex-start;
   }
@@ -436,10 +436,6 @@ padding-left: 10px;
     flex-direction: row;
     gap: 10px;
     justify-self: center;
-  }
-
-  .header__title {
-    margin-right: 20px;
   }
 
   .content-section__why {

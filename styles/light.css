@@ -109,5 +109,15 @@
 }
 } 
 
-
-
+@media (width >= 1024px) {
+  .theme-light .header.decorated-zone::before {
+  content: ' ';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+  right: 20px;
+  top: 20px;
+}
+}

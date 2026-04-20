@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
   font-family: var(--font-family);
   overflow-x: hidden;
-  
+  overflow-y: hidden;
   padding: 0px;
 }
 
