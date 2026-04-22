@@ -4,4 +4,11 @@
   --h-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #ff0070;
+  --title-color: #DB00FF;
+  --decor-color: #ff0070;
+  --button-hover: #FF007066;
+}
+
+.theme-dark .section__title {
+  color: #ff0070;
 }

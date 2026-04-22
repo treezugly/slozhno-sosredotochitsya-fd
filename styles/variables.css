@@ -1,10 +1,13 @@
 :root {
   --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: #08055ab7;
+  --bg-color: #000028;
   --accent-color: #ff0070;
   --h-color: #000028;
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
+  --section-title-color: #ff0070;
+  --decor-color: #ff0070;
+  --button-hover: #FF007066;
   --font-family: 'IBM Plex mono', sans-serif;
   --font-weight: 700;
   --font-style: bold;
@@ -14,4 +17,24 @@
   --basic-font-size: 18px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #fff1ff;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --section-title-color: var(--text-color);
+  --h-color: var(--text-color);
+  --title-color: #FFC2E6;
+  --decor-color: #353430;
+  --button-hover: #32312D66;
+}
+
+  :root:not(.theme-dark):not(.theme-light) .header__rec {
+    display: none;
+  }
+
 }
