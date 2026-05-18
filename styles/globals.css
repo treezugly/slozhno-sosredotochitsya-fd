@@ -11,8 +11,6 @@ body {
   max-inline-size: 1440px;
   margin: 0 auto;
   font-family: var(--font-family);
-  overflow-x: hidden;
-  
   padding: 0px;
 }
 

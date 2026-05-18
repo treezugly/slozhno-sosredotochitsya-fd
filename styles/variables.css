@@ -20,21 +20,4 @@
 }
 
 
-@media (prefers-color-scheme: light) {
-  :root {
-  --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #fff1ff;
-  --accent-color: #ff8dcb;
-  --text-color: #353430;
-  --section-title-color: var(--text-color);
-  --h-color: var(--text-color);
-  --title-color: #FFC2E6;
-  --decor-color: #353430;
-  --button-hover: #32312D66;
-}
 
-  :root:not(.theme-dark):not(.theme-light) .header__rec {
-    display: none;
-  }
-
-}
