@@ -178,7 +178,7 @@ main {
   display: grid;
 }
 
-.section__title-intro {
+.content-section__intro .section__title {
   padding-top: 40px;
 }
 
@@ -204,11 +204,11 @@ main {
   display: grid;
 }
 
-.card__title-solutions {
+.content-section__solutions .card__title {
   margin-bottom: 20px;
 }
 
-.card__title-gallery {
+.gallery-section .card__title {
   margin-top: 30px;
 }
 
@@ -332,19 +332,19 @@ main {
     line-height: var(--line-height);
   }
 
-  .section__title-intro {
+  .content-section__intro .section__title {
     padding-top: 0px;
     font-weight: var(--font-weight);
     padding-bottom: 0px;
   }
 
-  .section__title-issues {
+  .content-section__issues .section__title {
     grid-column: span 3;
     padding-bottom: 20px;
     width: 236px;
   }
 
-  .article-list__alternate {
+  .content-section__issues .article-list {
     grid-column: span 3;
     grid-auto-flow: row;
   }
@@ -353,7 +353,7 @@ main {
     padding-bottom: 80px;
   }
 
-  .card__title-solutions {
+  .content-section__solutions .card__title {
     margin: 0px;
   }
 
@@ -362,7 +362,7 @@ main {
     padding-bottom: 45px;
   }
 
-  .article-list__solutions {
+  .content-section__solutions .article-list {
     padding-left: 8px;
   }
 
@@ -370,8 +370,9 @@ main {
     margin-bottom: 10px;
   }
 
-  .card__title-gallery {
+  .gallery-section .card__title {
     grid-column: span 3;
+    margin-top: 35px;
   }
 
   .gallery__desktop {
@@ -461,7 +462,7 @@ main {
   }
 
 
-  .article-list__intro {
+  .content-section__intro .article-list {
     grid-column: 2 / 3;
   }
 
@@ -470,13 +471,13 @@ main {
     padding-bottom: 80px;
   }
 
-  .section__title-issues {
+  .content-section__issues .section__title {
     grid-column: span 3;
     padding-bottom: 20px;
     width: 315px;
   }
 
-  .article-list__alternate {
+  .content-section__issues .article-list {
    grid-template-columns: repeat(3, 1fr);
    margin-right: 20px;
    gap: 20px;
@@ -486,12 +487,12 @@ main {
     padding-bottom: 50px;
   }
 
-  .section__title-solutions {
+  .content-section__solutions .section__title {
     padding-left: 20px;
   }
 
 
-  .article-list__solutions {
+  .content-section__solutions .article-list {
     margin-right: 18px;
     padding-left: 10px;
   }
@@ -499,6 +500,10 @@ main {
   .gallery-section {
     padding-left: 20px;
     margin-right: 20px;
+  }
+
+  .gallery-section .card__title {
+    margin-top: 30px;
   }
   
   .footer {
